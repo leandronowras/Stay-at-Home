@@ -3,7 +3,44 @@
 <head> <!-- EU nao sabia que era assim que comnetava kkkk -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>????</title>
+    <title>Vc nao esta sozinho(a)</title>
+
+    <style>
+        body {
+            background:#e5e5e5;
+            color: #25282B;
+
+            text-align: center;
+        }
+
+        .fat {
+            background: #ff5e84;
+            color: white
+            
+        }
+
+        #footer {
+            
+            text-align: center
+        }
+
+        button {
+            color: #ff5e84;
+            border: none;
+            font-weight: bold;
+            background:none
+        }
+
+        #footer a{ 
+            color: #25282b;
+            text-decoration: none;
+        }
+
+        .hide {
+            display:none
+        }
+    </style>
+
 </head>
 <body>
     <img src="logo.png" alt="casa criativa">
@@ -16,14 +53,28 @@
         cursos, dicas</strong> e tudo que for necessario para tornar esse momento mais
         interessante
     </p>
-    <p>
+    <p class = 'fat'>
         Comece clicando em ver ideias para ver as ideias cadastradas e 
         contribua adicionando sua ideia
     </p>
 
     <button>+ Adicionar ideia</button>
-    <button>Ver ideias</button>
+    <button class='fat'>Ver ideias</button>
     
-    <p>Feito para todo mundo se sentir bem S2</p>
+    <p id = "footer">Feito para todo mundo se sentir bem ❤ <a href="https://i.pinimg.com/736x/ca/bc/1b/cabc1baab534c4a88091d43ada3a9714.jpg">^^</a></p>
+
+    <script>
+        document
+            .querySelector("button.fat")
+            .addEventListener("click", function(){
+                document
+                    .querySelector("#footer") // vai selecionar o q tem esse id
+                    .classList //vai ler tudo q esta escrito
+                    .toggle("hide") //vai esconder oq foi lido
+            })
+
+    </script>
+
+    
 </body>
 </html>
