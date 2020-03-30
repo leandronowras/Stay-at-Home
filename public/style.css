@@ -154,10 +154,10 @@ footer a{
 
 /* modal */
 #modal {
-    transition: 400ms;
+    
     background: #ff5e84;
 
-    position: absolute;
+    position: fixed;
     top:0;
     bottom: 0;
     right: 0 ;
@@ -166,7 +166,7 @@ footer a{
 
     display: flex;
     justify-content:center;
-    
+    transition: 400ms;
 }
 
 #modal.addScroll {
@@ -174,7 +174,7 @@ footer a{
 }
 
 #modal .content {
-    margin-top: 15%;
+    margin-top: 5%;
 
     color: white
 }
